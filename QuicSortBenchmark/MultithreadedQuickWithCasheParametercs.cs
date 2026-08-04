@@ -133,6 +133,8 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
                 if (left < j)
                 {
                     second = Task.Run(() => DepthLimitedQuickSort(keys, left, j, depthLimit, useBlockingColection));
+                    DepthLimitedQuickSort(keys, i, right, depthLimit, useBlockingColection);
+                    return;
                 }
                 left = i;
             }
@@ -141,6 +143,8 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
                 if (i < right)
                 {
                     second = Task.Run(() => DepthLimitedQuickSort(keys, i, right, depthLimit, useBlockingColection));
+                    DepthLimitedQuickSort(keys, left, j, depthLimit, useBlockingColection);
+                    return;
                 }
                 right = j;
             }
