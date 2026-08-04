@@ -34,9 +34,10 @@ void BenchmarTable<T>(Action<T[]> action, int sizeArray, int numberTry, Func<T> 
     List<long> times = new List<long>(numberTry);
     for (int i = 0; i < numberTry; i++)
     {
+        var clone = (T[])table.Clone();
         Stopwatch stopwatch = new Stopwatch();
         stopwatch.Start();
-        action(table);
+        action(clone);
         long result = stopwatch.ElapsedMilliseconds;
         times.Add(result);
         sumTime += result;

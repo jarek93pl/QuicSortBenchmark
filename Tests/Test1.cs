@@ -1,6 +1,7 @@
 ﻿using QuicSortBenchmark;
 using QuicSortBenchmark.Comparer;
 using System.Diagnostics;
+using System.Numerics;
 
 namespace Tests
 {
@@ -48,17 +49,18 @@ namespace Tests
         {
             var tab = Generator.GenerateRandomPersons(2_000_000);
             var tab2 = (Person[])tab.Clone();
-
+            DistanceComparer distanceComparer = new DistanceComparer();
+            distanceComparer.pointCenter = new Vector2(40, 50);
             Stopwatch stopwatch = Stopwatch.StartNew();
-            Array.Sort(tab2, new NameComparer());
+            Array.Sort(tab2, distanceComparer);
             Console.WriteLine($"Time taken to sort {tab.Length} Person objects using Array.Sort: {stopwatch.ElapsedMilliseconds} ms");
             stopwatch = Stopwatch.StartNew();
-            SortParallelWithProcesorParameter<Person> sortParallel = new SortParallelWithProcesorParameter<Person>(20_000_000, 200, new NameComparer());
+            SortParallelWithProcesorParameter<Person> sortParallel = new SortParallelWithProcesorParameter<Person>(20_000_000, 200, distanceComparer);
             sortParallel.Sort(tab);
             Console.WriteLine($"Time taken to sort {tab.Length} Person objects: {stopwatch.ElapsedMilliseconds} ms");
             for (int i = 0; i < tab.Length; i++)
             {
-                Assert.AreEqual(tab[i].CompareTo(tab2[i]), 0);
+                Assert.AreEqual(Vector2.Distance(distanceComparer.pointCenter, tab[i].position), Vector2.Distance(distanceComparer.pointCenter, tab2[i].position), 0.1);
             }
         }
         [TestMethod]
