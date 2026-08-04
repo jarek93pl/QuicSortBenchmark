@@ -1,4 +1,4 @@
-﻿
+﻿/* error 
 //Csharpusing System;
 using System.Threading.Tasks;
 
@@ -39,7 +39,7 @@ static class SortParallel<T> where T : IComparable<T>
 
         for (int j = left; j < right; j++)
         {
-            if (arr[j].CompareTo(pivot) > 0)
+            if (arr[j].CompareTo(pivot) >= 0)
             {
                 i++;
                 Swap(arr, i, j);
@@ -70,3 +70,4 @@ static class SortParallel<T> where T : IComparable<T>
         Console.WriteLine(string.Join(", ", arr));
     }
 }
+*/

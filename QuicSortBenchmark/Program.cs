@@ -9,7 +9,7 @@ int[] tableSizeArray = new int[] { 1000, 10000, 100000, 1_000_000, 10_000_000 };
 foreach (var item in tableSizeArray)
 {
     BenchmarTable<Person>(X => { Array.Sort(X); }, item, 5, () => Generator.GetPerson(), "net implemetation");
-    BenchmarTable<Person>(X => { SortParallel<Person>.QuickSortParallel(X, 0, X.Length - 1); }, item, 5, () => Generator.GetPerson(), "mutithreting");
+    //BenchmarTable<Person>(X => { SortParallel<Person>.QuickSortParallel(X, 0, X.Length - 1); }, item, 5, () => Generator.GetPerson(), "mutithreting");
 }
 Console.WriteLine("Finish");
 /*
