@@ -35,10 +35,18 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
             {
                 while (!blockingColection.IsCompleted)
                 {
-                    while (blockingColection.TryTake(out startAndEnd range))
+                    try
                     {
+                        var range = blockingColection.Take();
+
+
                         DepthLimitedQuickSort(arr, range.start, range.end, 32, false);
                     }
+                    catch (Exception)
+                    {
+
+                    }
+
                 }
             }));
         }
