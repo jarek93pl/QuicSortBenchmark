@@ -15,11 +15,12 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
     IComparer<T> comparer;
     public SortParallelWithProcesorParameter(int sizeCashe, int sizeObject, IComparer<T> comparer)
     {
+        numberOfProcessors = Environment.ProcessorCount / 4;
         this.comparer = comparer;
         PARALLEL_THRESHOLD = sizeCashe / (sizeObject * numberOfProcessors);
         tasks = new Task[numberOfProcessors - 2];
     }
-    int numberOfProcessors = Environment.ProcessorCount / 2;
+    int numberOfProcessors;
     private readonly int PARALLEL_THRESHOLD;
     private const int MainPARALLEL_THRESHOLD = 50_000;
     BlockingCollection<startAndEnd> blockingColection = new BlockingCollection<startAndEnd>();
