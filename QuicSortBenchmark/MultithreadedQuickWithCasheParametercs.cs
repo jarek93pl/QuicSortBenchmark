@@ -15,7 +15,7 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
     IComparer<T> comparer;
     public SortParallelWithProcesorParameter(int sizeCashe, int sizeObject, IComparer<T> comparer)
     {
-        numberOfProcessors = Environment.ProcessorCount / 4;
+        numberOfProcessors = Environment.ProcessorCount / 2;
         this.comparer = comparer;
         PARALLEL_THRESHOLD = sizeCashe / (sizeObject * numberOfProcessors);
         tasks = new Task[numberOfProcessors - 2];

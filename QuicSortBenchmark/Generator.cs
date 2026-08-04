@@ -17,7 +17,7 @@ namespace QuicSortBenchmark
             person.homeAddres = new addres(randomString(), randomString(), randomString());
             person.personalCode = randomString();
             person.SecondName = randomString();
-
+            person.position = new System.Numerics.Vector2(rand.NextSingle() * 100, rand.NextSingle() * 100);
             return person;
 
 

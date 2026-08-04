@@ -18,9 +18,17 @@ namespace QuicSortBenchmark.Comparer
             {
                 val = string.Compare(x.SecondName, y.SecondName);
             }
+            else
+            {
+                return val;
+            }
             if (val == 0)
             {
                 val = string.Compare(x.personalCode, y.personalCode);
+            }
+            else
+            {
+                return val;
             }
             return val;
 

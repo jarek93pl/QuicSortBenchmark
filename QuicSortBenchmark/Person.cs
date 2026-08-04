@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +9,7 @@ namespace QuicSortBenchmark
 {
     public class Person : IComparable<Person>
     {
+        public Vector2 position;
         public string FirstName { get; set; }
         public string SecondName { get; set; }
         public string personalCode { get; set; }
