@@ -25,6 +25,7 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
     private const int MainPARALLEL_THRESHOLD = 50_000;
     BlockingCollection<startAndEnd> blockingColection = new BlockingCollection<startAndEnd>();
     Task[] tasks;
+    Task second;
     bool started = false;
     public void Sort(T[] arr)
     {
@@ -47,13 +48,15 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
             Array.Sort(arr);
             return;
         }
-        DepthLimitedQuickSort(arr, left, right, 32);
+        DepthLimitedQuickSort1(arr, left, right, 32);
+        second?.Wait();
         blockingColection.CompleteAdding();
         if (!started)
         {
             return;
         }
         Task.WaitAll(tasks);
+
         foreach (var range in blockingColection.GetConsumingEnumerable())
         {
             Span<T> span = arr.AsSpan(range.start, range.end - range.start + 1);
@@ -81,6 +84,68 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
         blockingColection.Add(new startAndEnd { start = left, end = right });
     }
 
+    internal void DepthLimitedQuickSort1(T[] keys, int left, int right, int depthLimit, bool useBlockingColection = true)
+    {
+        if (useBlockingColection && right - left < PARALLEL_THRESHOLD)
+        {
+            InvokeBlockingColection(left, right);
+            return;
+        }
+        do
+        {
+
+            int i = left;
+            int j = right;
+
+            if (depthLimit == 0)
+            {
+                Heapsort(keys, left, right);
+                return;
+            }
+            // pre-sort the low, middle (pivot), and high values in place.
+            // this improves performance in the face of already sorted data, or 
+            // data that is made up of multiple sorted runs appended together.
+            int middle = i + ((j - i) >> 1);
+            SwapIfGreater(keys, comparer, i, middle);  // swap the low with the mid point
+            SwapIfGreater(keys, comparer, i, j);   // swap the low with the high
+            SwapIfGreater(keys, comparer, middle, j); // swap the middle with the high
+
+            T x = keys[middle];
+            do
+            {
+                while (comparer.Compare(keys[i], x) < 0) i++;
+                while (comparer.Compare(x, keys[j]) < 0) j--;
+                Contract.Assert(i >= left && j <= right, "(i>=left && j<=right)  Sort failed - Is your IComparer bogus?");
+                if (i > j) break;
+                if (i < j)
+                {
+                    T key = keys[i];
+                    keys[i] = keys[j];
+                    keys[j] = key;
+                }
+                i++;
+                j--;
+            } while (i <= j);
+
+
+            if (j - left <= right - i)
+            {
+                if (left < j)
+                {
+                    second = Task.Run(() => DepthLimitedQuickSort(keys, left, j, depthLimit, useBlockingColection));
+                }
+                left = i;
+            }
+            else
+            {
+                if (i < right)
+                {
+                    second = Task.Run(() => DepthLimitedQuickSort(keys, i, right, depthLimit, useBlockingColection));
+                }
+                right = j;
+            }
+        } while (left < right);
+    }
     internal void DepthLimitedQuickSort(T[] keys, int left, int right, int depthLimit, bool useBlockingColection = true)
     {
         if (useBlockingColection && right - left < PARALLEL_THRESHOLD)
