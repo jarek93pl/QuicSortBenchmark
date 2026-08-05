@@ -1,0 +1,1460 @@
+Anna	1 063 768
+Piotr	682 519
+Krzysztof	631 900
+Katarzyna	602 474
+Małgorzata	572 067
+Maria	566 957
+Agnieszka	544 968
+Tomasz	533 223
+Andrzej	513 751
+Paweł	502 078
+Michał	492 336
+Ewa	469 822
+Barbara	467 697
+Jan	462 517
+Marcin	447 274
+Magdalena	434 120
+Jakub	433 698
+Elżbieta	404 679
+Joanna	401 861
+Adam	400 579
+Aleksandra	390 150
+Krystyna	383 140
+Łukasz	382 274
+Mateusz	377 594
+Monika	376 774
+Grzegorz	369 675
+Marek	369 242
+Zofia	360 470
+Stanisław	348 830
+Wojciech	335 544
+Natalia	320 225
+Julia	314 543
+Teresa	312 053
+Karolina	295 015
+Marta	289 125
+Danuta	286 032
+Mariusz	283 708
+Dariusz	279 484
+Beata	278 457
+Maciej	267 060
+Dorota	266 291
+Rafał	260 328
+Robert	256 984
+Alicja	254 751
+Kamil	251 238
+Zbigniew	249 852
+Szymon	244 933
+Dawid	239 947
+Jolanta	233 614
+Kacper	232 132
+Hanna	231 670
+Zuzanna	231 508
+Iwona	230 870
+Jacek	227 193
+Halina	226 656
+Paulina	224 212
+Grażyna	223 100
+Jerzy	222 479
+Jadwiga	218 462
+Justyna	216 299
+Wiktoria	209 097
+Bartosz	205 155
+Janina	198 471
+Artur	198 352
+Irena	196 353
+Bożena	194 754
+Ryszard	189 302
+Maja	188 665
+Józef	188 007
+Jarosław	187 945
+Tadeusz	186 094
+Sebastian	186 065
+Renata	185 837
+Agata	184 481
+Damian	183 842
+Sylwia	181 946
+Sławomir	180 911
+Patryk	180 230
+Urszula	180 127
+Antoni	176 690
+Filip	176 647
+Roman	174 384
+Mirosław	173 239
+Janusz	173 146
+Daniel	171 998
+Patrycja	169 497
+Oliwia	166 405
+Karol	165 862
+Emilia	165 172
+Przemysław	165 034
+Aleksander	162 904
+Izabela	159 119
+Helena	155 762
+Weronika	151 666
+Aneta	151 255
+Henryk	150 313
+Adrian	149 555
+Ewelina	148 020
+Martyna	143 238
+Mikołaj	141 544
+Franciszek	140 924
+Klaudia	139 055
+Gabriela	137 276
+Dominik	136 526
+Lena	134 386
+Kazimierz	132 529
+Arkadiusz	132 300
+Wiesław	130 136
+Amelia	129 844
+Marzena	128 745
+Bartłomiej	126 070
+Dominika	123 336
+Kinga	121 584
+Marian	119 128
+Wiktor	117 937
+Edyta	113 456
+Kamila	111 680
+Krystian	111 179
+Leszek	108 443
+Marianna	106 305
+Alina	104 161
+Radosław	103 469
+Waldemar	102 455
+Wiesława	100 971
+Stanisława	100 184
+Igor	96 340
+Hubert	90 840
+Bogdan	90 622
+Konrad	90 373
+Daria	89 857
+Wanda	88 112
+Zdzisław	85 323
+Marcel	82 949
+Laura	82 462
+Lidia	81 723
+Mariola	81 131
+Oskar	80 962
+Nikola	79 453
+Milena	78 513
+Lucyna	77 658
+Nikodem	77 530
+Maksymilian	75 331
+Antonina	73 899
+Edward	72 938
+Wioletta	72 214
+Mieczysław	69 281
+Leon	68 927
+Miłosz	68 195
+Mirosława	67 643
+Angelika	64 883
+Władysław	64 365
+Oliwier	62 186
+Olga	61 489
+Michalina	60 713
+Czesław	59 053
+Ireneusz	57 371
+Bogusław	56 772
+Maksym	56 052
+Nadia	55 631
+Eugeniusz	55 466
+Ilona	55 357
+Sandra	54 776
+Witold	54 261
+Kornelia	54 209
+Pola	53 481
+Alan	53 224
+Bogumiła	52 928
+Ignacy	52 804
+Liliana	52 511
+Sylwester	52 342
+Stefan	52 091
+Iga	51 511
+Łucja	50 643
+Nina	50 363
+Marcelina	50 257
+Kazimiera	49 361
+Marlena	48 612
+Cezary	48 176
+Gabriel	47 642
+Zygmunt	46 240
+Anita	45 974
+Bogusława	45 946
+Sabina	45 672
+Jagoda	45 493
+Julian	45 080
+Tymon	43 890
+Genowefa	43 627
+Włodzimierz	43 304
+Henryka	42 996
+Tymoteusz	40 741
+Regina	39 499
+Józefa	39 367
+Stefania	39 291
+Norbert	39 260
+Aniela	38 898
+Zenon	38 796
+Diana	38 389
+Karina	37 856
+Fabian	36 577
+Adrianna	35 484
+Czesława	34 388
+Sara	34 342
+Błażej	33 134
+Klara	32 842
+Władysława	32 515
+Roksana	32 148
+Bohdan	31 880
+Maryna	31 850
+Dagmara	31 830
+Malwina	30 966
+Eryk	30 271
+Emil	29 690
+Eliza	29 641
+Blanka	28 489
+Kaja	28 474
+Róża	27 758
+Żaneta	27 030
+Anastazja	26 005
+Natan	24 937
+Cecylia	24 431
+Zdzisława	23 939
+Rozalia	23 505
+Ksawery	23 269
+Bernadeta	22 382
+Julita	21 916
+Borys	21 901
+Lech	21 602
+Leokadia	21 060
+Nela	20 806
+Aldona	20 683
+Olaf	19 961
+Wacław	19 710
+Bronisław	19 427
+Remigiusz	19 397
+Matylda	19 259
+Kajetan	19 041
+Eugenia	18 840
+Bronisława	18 693
+Bruno	18 543
+Magda	18 399
+Daniela	18 238
+Larysa	18 014
+Aurelia	17 536
+Celina	17 524
+Bernard	16 769
+Bolesław	16 700
+Adriana	16 635
+Paula	15 840
+Tobiasz	15 642
+Honorata	15 459
+Albert	15 344
+Kalina	15 051
+Gracjan	14 460
+Lucjan	14 303
+Brygida	13 969
+Seweryn	13 918
+Marika	13 735
+Edmund	13 594
+Tamara	13 588
+Kornel	13 266
+Romuald	12 922
+Szczepan	12 675
+Elwira	12 430
+Marzanna	12 207
+Mieczysława	11 724
+Luiza	11 721
+Tatiana	11 550
+Ernest	11 467
+Gertruda	11 284
+Arleta	11 181
+Liwia	11 050
+Joachim	10 818
+Jędrzej	10 349
+Alfred	10 323
+Teodor	10 273
+Leonard	10 239
+Ludwik	9 968
+Feliks	9 938
+Judyta	9 905
+Lesław	9 782
+Bogumił	9 688
+Adela	9 322
+Gerard	9 185
+Melania	9 084
+Juliusz	9 074
+Jowita	8 866
+Apolonia	8 546
+Franciszka	8 226
+Dorian	8 221
+Inga	8 178
+Ada	8 154
+Nataniel	7 864
+Klaudiusz	7 668
+Estera	7 566
+Mieszko	7 552
+Gustaw	7 470
+Romana	7 455
+Samuel	7 432
+Konstanty	7 385
+Alfreda	7 270
+Emma	7 110
+Julianna	6 974
+Eleonora	6 777
+Lilia	6 749
+Rita	6 732
+Ida	6 686
+Cyprian	6 679
+Alojzy	6 399
+Florian	6 303
+Brajan	6 153
+Felicja	6 139
+Ludwika	6 079
+Gaja	6 051
+Benedykt	5 933
+Zenona	5 906
+Donata	5 889
+Amanda	5 880
+Rajmund	5 778
+Ludmiła	5 727
+Iwo	5 508
+Walentyna	5 474
+Leonid	5 338
+Wacława	5 254
+Otylia	5 191
+Beniamin	5 186
+Albina	5 108
+Ariel	5 105
+Kordian	5 068
+Jeremi	5 019
+Romualda	4 993
+Marceli	4 982
+Irmina	4 973
+Zenobia	4 949
+Gizela	4 881
+Hildegarda	4 836
+Fryderyk	4 722
+Lilla	4 715
+Rudolf	4 691
+Aleksy	4 657
+Sławomira	4 550
+Angelina	4 513
+Bohdana	4 495
+Jaśmina	4 485
+Bernarda	4 441
+Wincenty	4 437
+Hieronim	4 328
+Erwin	4 303
+Roland	4 195
+Eryka	4 135
+Sergiusz	4 112
+Jagna	3 972
+Longina	3 949
+Amadeusz	3 885
+Faustyna	3 875
+Olgierd	3 873
+Mirela	3 854
+Ryszarda	3 807
+Zygfryd	3 743
+Pelagia	3 714
+Waleria	3 591
+Maurycy	3 558
+Samanta	3 527
+Teodora	3 478
+Teodozja	3 468
+Olimpia	3 443
+Emilian	3 416
+Ksenia	3 342
+Oliwer	3 301
+Marcela	3 299
+Adelajda	3 281
+Kewin	3 257
+Noemi	3 241
+Maryla	3 145
+Lea	3 126
+Oktawia	3 111
+Konstancja	3 096
+Brunon	3 020
+Walenty	2 985
+Hugo	2 926
+Arnold	2 919
+Jeremiasz	2 918
+Pamela	2 887
+Augustyn	2 864
+Leopold	2 795
+Lucja	2 778
+Zyta	2 745
+Stella	2 739
+Oktawian	2 737
+Andrea	2 651
+Adelina	2 640
+Timur	2 564
+Inez	2 560
+Bogna	2 542
+Emanuel	2 523
+Herbert	2 503
+Anatol	2 482
+Miron	2 459
+Korneliusz	2 426
+Jonasz	2 421
+Leonarda	2 374
+Wilhelm	2 358
+Jonatan	2 333
+Edwin	2 321
+Albin	2 318
+Kasper	2 264
+Miriam	2 241
+Adolf	2 226
+Lina	2 218
+Krzysztofa	2 198
+Walter	2 195
+Ziemowit	2 130
+Feliksa	2 107
+Tytus	2 101
+Manfred	2 096
+Kryspin	2 088
+Antonia	2 076
+Helmut	2 012
+Nadzieja	1 965
+Alfons	1 920
+Werner	1 845
+Marietta	1 844
+Edwarda	1 843
+Ginter	1 839
+Manuela	1 791
+Elfryda	1 768
+Teofil	1 748
+Klementyna	1 743
+Florentyna	1 733
+Bolesława	1 723
+Patrycjusz	1 699
+Klaudyna	1 641
+Eliasz	1 623
+Salomea	1 623
+Mira	1 622
+Greta	1 606
+Malina	1 531
+Lechosław	1 514
+Klemens	1 511
+Kasjan	1 496
+Walerian	1 483
+Carmen	1 481
+Kosma	1 478
+Dina	1 466
+Aaron	1 455
+Sabrina	1 450
+Ruta	1 411
+Roch	1 397
+Dobrosława	1 375
+Helga	1 372
+Wawrzyniec	1 327
+Herman	1 325
+Aurora	1 310
+Platon	1 308
+Dalia	1 278
+Jacenty	1 275
+Jaromir	1 271
+Marcjanna	1 265
+Longin	1 258
+Melisa	1 230
+Ferdynand	1 220
+Wanesa	1 212
+Radomir	1 205
+Bernardyna	1 194
+Anika	1 182
+Eulalia	1 179
+Jarosława	1 162
+Dżesika	1 151
+Jordan	1 149
+Dionizy	1 130
+Zoe	1 123
+Bogdana	1 105
+Roger	1 099
+Wirginia	1 092
+Edgar	1 083
+Emanuela	1 070
+Józefina	1 066
+Eligiusz	1 065
+Wit	1 047
+Łucjan	1 027
+Idalia	1 021
+Irma	1 005
+Izydor	1 003
+Berenika	1 002
+Ewald	997
+Balbina	976
+Teofila	973
+Zachary	947
+August	933
+Gniewomir	919
+Zbysław	865
+Amalia	864
+Cyryl	859
+Joel	855
+Bazyli	852
+Wolfgang	813
+Sybilla	806
+Dobrawa	803
+Blandyna	798
+Filomena	794
+Bogusz	781
+Ligia	780
+Seweryna	772
+Benedykta	770
+Dymitr	769
+Gracjana	769
+Celestyna	760
+Renat	760
+Lubomira	756
+Kunegunda	751
+Leonia	742
+Tina	737
+Tristan	737
+Sława	736
+Aureliusz	728
+Lubomir	706
+Kasandra	698
+Letycja	697
+Leontyna	675
+Ingeborga	669
+Donat	667
+Nestor	663
+Dagna	650
+Bonifacy	648
+Eunika	645
+Zachariasz	628
+Berta	620
+Juliana	619
+Nikolina	608
+Gleb	603
+Alma	589
+Ariadna	584
+Tekla	581
+Miranda	578
+Chloe	562
+Domicela	556
+Chrystian	551
+Euzebiusz	536
+Felicjan	535
+Lesława	522
+Miłosława	518
+Benon	517
+Krzesimir	501
+Augustyna	499
+Ryta	493
+Walery	487
+Dobromiła	485
+Hiacynta	484
+Halszka	482
+Rozwita	482
+Tycjan	481
+Ema	479
+Izolda	474
+Sylwestra	463
+Radosława	459
+Justyn	456
+Wilhelmina	456
+Makary	454
+Hilary	445
+Narcyz	440
+Sambor	439
+Noe	436
+Otto	433
+Jurand	432
+Ernestyna	429
+Wadim	429
+Serafin	428
+Cezariusz	424
+January	421
+Rajnold	421
+Ismena	420
+Saba	418
+Gracja	413
+Lukrecja	411
+Delfina	408
+Oktawiusz	401
+Ksymena	400
+Abraham	396
+Lolita	394
+Teona	388
+Norman	387
+Arian	386
+Eufemia	377
+Fryderyka	375
+Ludomira	374
+Zenaida	374
+Nila	368
+Sylweriusz	368
+Wieńczysław	367
+Petronela	366
+Gilbert	365
+Tyberiusz	365
+Idzi	364
+Gwidon	363
+Dobromir	359
+Iweta	359
+Konstantyn	357
+Engelbert	356
+Flora	356
+Żanna	354
+Ewaryst	353
+German	348
+Narcyza	343
+Benigna	339
+Zenobiusz	339
+Cyryla	337
+Natanael	336
+Krystyn	330
+Bibianna	328
+Witalis	327
+Aniceta	322
+Apolinary	318
+Nastazja	316
+Hektor	314
+Rufin	307
+Sylwiusz	307
+Rebeka	304
+Winicjusz	303
+Oswald	302
+Ludomir	301
+Jarema	299
+Adamina	286
+Scholastyka	285
+Wera	282
+Hermina	273
+Modesta	272
+Nonna	272
+Leonida	270
+Ingryda	269
+Leona	269
+Witosław	269
+Kilian	268
+Gaweł	265
+Ambroży	264
+Ludwina	263
+Fabiola	262
+Ofelia	259
+Gerald	258
+Medard	255
+Syntia	255
+Apoloniusz	253
+Hipolit	252
+Mirona	251
+Laurencja	250
+Abel	247
+Asaf	246
+Kamelia	244
+Roberta	244
+Serafina	244
+Erwina	240
+Magnus	239
+Wielisława	234
+Sobiesław	233
+Dolores	230
+Dobiesław	228
+Donald	224
+Wincentyna	223
+Augusta	222
+Hieronima	221
+Dobrosław	220
+Krystiana	220
+Rafaela	220
+Lucjusz	215
+Modest	213
+Prakseda	212
+Bożydar	210
+Erhard	206
+Miłosław	203
+Paloma	200
+Barnaba	199
+Dacjan	198
+Faina	197
+Koryna	197
+Celestyn	196
+Dąbrówka	193
+Ksawera	193
+Kasjana	192
+Felicyta	191
+Gotfryd	189
+Izydora	189
+Pia	186
+Samson	185
+Gustawa	183
+Lotar	182
+Damazy	180
+Damiana	179
+Anatola	177
+Marisa	175
+Urban	175
+Gaspar	172
+Alojza	171
+Alba	168
+Cyntia	168
+Walburga	168
+Kryspina	165
+Egon	164
+Fryda	164
+Telesfor	163
+Izaak	160
+Wincenta	160
+Aidan	158
+Anatolia	157
+Biruta	157
+Marcjan	156
+Wisława	153
+Fabiana	152
+Florianna	152
+Melchior	151
+Ludgarda	147
+Otton	146
+Saturnin	146
+Baltazar	145
+Maura	144
+Esmeralda	143
+Celia	139
+Sławosz	138
+Eligia	137
+Symeon	137
+Wenancjusz	137
+Sylwana	136
+Rościsław	135
+Adolfina	134
+Edwina	134
+Emiliana	133
+Wieńczysława	133
+Salomon	132
+Uriel	131
+Anastazy	130
+Areta	130
+Dezyderiusz	128
+Alwin	127
+Liwiusz	127
+Tomir	127
+Adolfa	125
+Bertold	125
+Janisław	125
+Radomił	125
+Beatrycze	124
+Marcelin	124
+Eufrozyna	123
+Koleta	123
+Edmunda	120
+Albertyna	119
+Bibiana	118
+Ludomiła	118
+Zygfryda	118
+Saturnina	117
+Sylwina	116
+Arseniusz	114
+Serena	110
+Filipina	109
+Tomisław	109
+Orfeusz	107
+Arkadia	106
+Flawia	105
+Telimena	105
+Erazm	104
+Hugon	104
+Amos	103
+Maksymiliana	103
+Hilaria	102
+Przemysława	102
+Wilibald	101
+Sabin	100
+Kordula	98
+Taida	98
+Tomira	97
+Klarysa	95
+Wiola	95
+Eustachy	94
+Florencja	94
+Latika	94
+Mojżesz	94
+Rajmunda	94
+Rajner	94
+Aurelian	93
+Nil	93
+Polikarp	93
+Rufina	92
+Martynian	91
+Brendan	89
+Reginald	89
+Gemma	88
+Faustyn	87
+Sylwin	87
+Jarogniew	86
+Arkady	85
+Horacy	84
+Kwiryna	84
+Sydonia	84
+Loreta	83
+Wendelin	83
+Artemiusz	82
+Walentyn	82
+Aisza	81
+Wirgiliusz	81
+Adalbert	80
+Bertrand	79
+Parys	78
+Tulia	77
+Heliodor	76
+Tacjana	76
+Eberhard	75
+Elizeusz	75
+Tarsylia	75
+Gaston	73
+Hortensja	73
+Lawinia	73
+Włodzisław	72
+Alberta	71
+Dobromira	71
+Kleopatra	71
+Siemowit	70
+Leopolda	69
+Norma	69
+Konstantyna	68
+Żywia	68
+Gerwazy	67
+Gerarda	66
+Polianna	66
+Ernesta	65
+Januariusz	65
+Mirabella	65
+Odeta	65
+Onufry	65
+Witosława	65
+Hadrian	64
+Jarmila	64
+Micheasz	64
+Anzelm	63
+Lechosława	63
+Napoleon	63
+Paulin	63
+Samuela	63
+Euzebia	62
+Ulryk	62
+Świętosława	61
+Alodia	60
+Lambert	60
+Linus	60
+Gryzelda	59
+Klotylda	59
+Szczęsny	59
+Arabella	58
+Imelda	58
+Bonawentura	57
+Konrada	57
+Rupert	57
+Astryda	56
+Dobromił	56
+Mścisław	56
+Odyseusz	55
+Izaura	54
+Alban	53
+Ignacja	53
+Orion	53
+Alwina	52
+Kasjusz	52
+Włodzisława	52
+Eudokia	51
+Fortunata	51
+Hermenegilda	51
+Sewer	51
+Zygmunta	51
+Genadiusz	50
+Askaniusz	49
+Lutosław	49
+Achilles	47
+Izajasz	47
+Radomiła	47
+Wielisław	47
+Zdobysław	47
+Antonin	46
+Tala	46
+Trojan	46
+Witolda	46
+Zefiryn	46
+Gerlinda	45
+Krzesisława	45
+Więcesława	45
+Gunter	44
+Ścibor	44
+Gordian	43
+Nikon	42
+Otmar	42
+Cyrus	41
+Wenanty	41
+Zawisza	41
+Hermes	40
+Kalikst	40
+Remigia	40
+Tolisława	40
+Dobiesława	39
+Nikandra	39
+Bernardyn	38
+Cezaria	38
+Edeltruda	38
+Efrem	38
+Leoncjusz	38
+Odys	38
+Prosper	38
+Przybysław	38
+Zacheusz	38
+Lutosława	37
+Matea	37
+Zbysława	37
+Apollo	36
+Ernestyn	36
+Gracjanna	36
+Pelin	36
+Poliana	36
+Wirginiusz	36
+Demetriusz	35
+Honoriusz	35
+Kajetana	35
+Kasja	34
+Leander	34
+Leandra	34
+Agrypina	33
+Bertram	33
+Dezydery	33
+Gedeon	33
+Jan Kanty	33
+Metody	33
+Eustachiusz	32
+Jordana	32
+Namir	32
+Nawoja	32
+Orestes	32
+Wojsław	32
+Amon	31
+Archibald	31
+Dagobert	31
+Honorat	31
+Nikodema	31
+Stanimir	31
+Trofim	31
+Rodryg	30
+Świętosław	30
+Pius	29
+Rufus	29
+Atanazy	28
+Flawiusz	28
+Gotard	28
+Oda	28
+Owidiusz	28
+Eleazar	27
+Filipa	27
+Gosława	27
+Nikifor	27
+Pankracy	27
+Czcibor	26
+Emeryk	26
+Ewangelina	26
+Leopoldyna	26
+Macieja	26
+Paschalis	26
+Tomiła	26
+Witalia	26
+Żelisław	26
+Chryzanta	25
+Eustachia	25
+Tycjana	25
+Ildefons	24
+Mamert	24
+Mścisława	24
+Wojmir	24
+Asteria	23
+Fidelis	23
+Kiejstut	23
+Penelopa	23
+Protazy	23
+Świetlana	23
+Teodozjusz	23
+Damroka	22
+Ezechiel	22
+Kaliksta	22
+Lucyla	22
+Norberta	22
+Salwator	22
+Sulisława	22
+Bonita	21
+Malkolm	21
+Nahum	21
+Ulryka	21
+Barnim	20
+Dyzma	20
+Edda	20
+Egbert	20
+Ezdrasz	20
+Fabia	20
+Jarmiła	20
+Marcjusz	20
+Sylwan	20
+Teobald	20
+Tolisław	20
+Amadea	19
+Bona	19
+Bonifacja	19
+Dacjusz	19
+Dionizja	19
+Domna	19
+Enoch	19
+Kapitolina	19
+Rosław	19
+Skarbimir	19
+Wilfryd	19
+Armida	18
+Kalista	18
+Kwiryn	18
+Laurencjusz	18
+Serwacy	18
+Filemon	17
+Gordiana	17
+Konkordia	17
+Marcja	17
+Roderyk	17
+Sykstus	17
+Tadea	17
+Aurea	16
+Balladyna	16
+Gajana	16
+Innocenta	16
+Izyda	16
+Kleofas	16
+Laurenty	16
+Lilioza	16
+Rozalinda	16
+Sobiesława	16
+Aleksja	15
+Ansgar	15
+Atalia	15
+Dobrogniewa	15
+Ekspedyt	15
+Gajusz	15
+Glafira	15
+Iryda	15
+Kastor	15
+Liba	15
+Ludger	15
+Matrona	15
+Patrycy	15
+Petroniusz	15
+Seren	15
+Sulisław	15
+Castiel	14
+Cezaryna	14
+Dzierżysław	14
+Festus	14
+Heliodora	14
+Miłowit	14
+Rosława	14
+Sokrates	14
+Tomił	14
+Ursyn	14
+Warcisław	14
+Andromeda	13
+Benona	13
+Boguchwała	13
+Domicjan	13
+Godzisław	13
+Gwidona	13
+Maro	13
+Maryn	13
+Nikanor	13
+Odo	13
+Prot	13
+Rodryk	13
+Tomisława	13
+Waleriana	13
+Wiktorian	13
+Wiktoryna	13
+Boguchwał	12
+Ekhard	12
+Frydolin	12
+Kasylda	12
+Korneli	12
+Krzysław	12
+Medarda	12
+Olimpiusz	12
+Afra	11
+Albana	11
+Anizja	11
+Beat	11
+Bratumiła	11
+Delfin	11
+Erast	11
+Ewarysta	11
+Filon	11
+Gerwin	11
+Grzymisława	11
+Gwalbert	11
+Innocenty	11
+Maksyma	11
+Maurycja	11
+Nimfa	11
+Odon	11
+Prokop	11
+Radomira	11
+Więcesław	11
+Amand	10
+Amata	10
+Beda	10
+Budzisława	10
+Dalimir	10
+Diomedes	10
+Drogosława	10
+Giedymin	10
+Gorgoniusz	10
+Hiacynt	10
+Ingolf	10
+Kiliana	10
+Mściwoj	10
+Nazariusz	10
+Nikander	10
+Romulus	10
+Teodozy	10
+Tychon	10
+Wenancja	10
+Westyna	10
+Zygbert	10
+Adelbert	9
+Alfonsa	9
+Ananiasz	9
+Bolebor	9
+Dzierżysława	9
+Gildas	9
+Grzymisław	9
+Gwido	9
+Imisława	9
+Klaudian	9
+Krzesisław	9
+Łazarz	9
+Poliksena	9
+Sędzimir	9
+Szczęsna	9
+Telesfora	9
+Wiara	9
+Włodzimira	9
+Amparo	8
+Andronik	8
+Aspazja	8
+Benilda	8
+Bibian	8
+Dawida	8
+Dyter	8
+Ewalda	8
+Faust	8
+Febronia	8
+Filaret	8
+Fortunat	8
+Gosław	8
+Gromisław	8
+Hermiona	8
+Iwon	8
+Jakubina	8
+Joachima	8
+Maksymin	8
+Mamerta	8
+Mścigniew	8
+Nemezjusz	8
+Pantaleon	8
+Perpetua	8
+Racibor	8
+Radowit	8
+Sewerian	8
+Stojgniew	8
+Tarsycjusz	8
+Wisław	8
+Zyndram	8
+Żywila	8
+Adelinda	7
+Agaton	7
+Ambrozja	7
+Anicet	7
+Apolinaria	7
+Apollina	7
+Apollon	7
+Bazyla	7
+Bratumił	7
+Digna	7
+Doroteusz	7
+Erazma	7
+Felicjana	7
+Felina	7
+Flawian	7
+Huberta	7
+Konstancjusz	7
+Kunibert	7
+Laurentyna	7
+Lewin	7
+Miłogost	7
+Ozeasz	7
+Rościsława	7
+Rymwid	7
+Sadok	7
+Sotera	7
+Symforian	7
+Terencjusz	7
+Wiktoryn	7
+Wirgilia	7
+Witomir	7
+Abdon	6
+Asteriusz	6
+Baldwin	6
+Błażeja	6
+Chryzostom	6
+Chwalimira	6
+Cyra	6
+Dobiegniew	6
+Domasława	6
+Ermelinda	6
+Eulogiusz	6
+Germana	6
+Herkules	6
+Hipolita	6
+Krescencja	6
+Krzesława	6
+Liberata	6
+Maron	6
+Nazary	6
+Niemir	6
+Placyda	6
+Pryska	6
+Radogost	6
+Rudolfina	6
+Sancja	6
+Sebastiana	6
+Spirydion	6
+Temistokles	6
+Tuliusz	6
+Werena	6
+Wespazjan	6
+Wojciecha	6
+Żegota	6
+Aggeusz	5
+Akwilina	5
+Amaranta	5
+Artemia	5
+Borzysław	5
+Bronimir	5
+Chryzant	5
+Cieszymir	5
+Dalemir	5
+Dalwin	5
+Demetria	5
+Domosław	5
+Eudoksja	5
+Fintan	5
+Florencjusz	5
+Gebhard	5
+Godfryd	5
+Godzisława	5
+Herakliusz	5
+Hermogenes	5
+Heron	5
+Hiltruda	5
+Ingbert	5
+Jazon	5
+Leoncja	5
+Ludomił	5
+Łucjana	5
+Mojmir	5
+Nicefor	5
+Owidia	5
+Prochor	5
+Sulimir	5
+Sylas	5
+Szymona	5
+Teofan	5
+Weridiana	5
+Włodzimir	5
+Wojsława	5
+Wszebor	5
+Agenor	4
+Anuncjata	4
+Ardalion	4
+Arystarch	4
+Benicjusz	4
+Bogudar	4
+Ciechosław	4
+Dezyderia	4
+Diogenes	4
+Dobromiera	4
+Doryda	4
+Drogomir	4
+Egidiusz	4
+Ewodia	4
+Faro	4
+Firmin	4
+Florentyn	4
+Galla	4
+Ginewra	4
+Hilarion	4
+Juwencjusz	4
+Kandyda	4
+Manea	4
+Manswet	4
+Maruta	4
+Mauryliusz	4
+Namysław	4
+Nazaria	4
+Nemezja	4
+Polian	4
+Samboja	4
+Sulibor	4
+Symplicjusz	4
+Tezeusz	4
+Waleriusz	4
+Wergiliusz	4
+Wszemiła	4
+Achacjusz	3
+Ademar	3
+Artemon	3
+Bogodar	3
+Bogurad	3
+Bratomiła	3
+Cyriak	3
+Dalegor	3
+Dargorad	3
+Dobrogost	3
+Dobroniega	3
+Domarad	3
+Dzierżykraj	3
+Epifaniusz	3
+Eustazja	3
+Fabiusz	3
+Felin	3
+Filona	3
+Firmina	3
+Florenty	3
+Gaudencja	3
+Gerbert	3
+Godzimir	3
+Gorgonia	3
+Gościsława	3
+Horacjusz	3
+Hygin	3
+Ifigenia	3
+Klemencja	3
+Krescenty	3
+Liberiusz	3
+Lutobor	3
+Majola	3
+Nawoj	3
+Otokar	3
+Pakosław	3
+Pelagiusz	3
+Piotra	3
+Przemił	3
+Romeusz	3
+Rudolfa	3
+Sewera	3
+Sędzisław	3
+Sieciech	3
+Stosław	3
+Strzeżysława	3
+Świętopełk	3
+Tarazjusz	3
+Teotym	3
+Tryfon	3
+Tymona	3
+Winanda	3
+Witalian	3
+Wiwina	3
+Włościsława	3
+Wyszomir	3
+Zbylut	3
+Achacy	2
+Akwila	2
+Alwar	2
+Amat	2
+Arnulf	2
+Arystyda	2
+Arystydes	2
+Awit	2
+Cecylian	2
+Cecyliusz	2
+Chionia	2
+Chwalisław	2
+Chwalisława	2
+Cieszybor	2
+Cieszysław	2
+Diodora	2
+Dionizjusz	2
+Dobrosułka	2
+Dobrowit	2
+Drogosław	2
+Edburga	2
+Edelburga	2
+Egidia	2
+Epifania	2
+Eustazy	2
+Fausta	2
+Febron	2
+Fidelisa	2
+Filadelfia	2
+Flawiana	2
+Floryna	2
+Fotyna	2
+Gaudenty	2
+Gawin	2
+Germanik	2
+Gorzysław	2
+Grodzisław	2
+Guntram	2
+Herakles	2
+Hermana	2
+Hermenegild	2
+Herminia	2
+Himisław	2
+Humbert	2
+Imisław	2
+Izbor	2
+Just	2
+Justa	2
+Kalistrat	2
+Kwieta	2
+Leokrycja	2
+Lutogniew	2
+Lutomir	2
+Makaria	2
+Maksencja	2
+Maksymian	2
+Maksymina	2
+Malachiasz	2
+Meinrad	2
+Melchiades	2
+Milawia	2
+Miłorad	2
+Miłowan	2
+Niceta	2
+Pafnucy	2
+Paramon	2
+Pelina	2
+Przebor	2
+Przemysł	2
+Przybysława	2
+Pudencjanna	2
+Racimir	2
+Rozamunda	2
+Salwiusz	2
+Sergia	2
+Serwiusz	2
+Sędzisława	2
+Siemisław	2
+Siemomysł	2
+Sławosław	2
+Stylian	2
+Sulpicjusz	2
+Świerad	2
+Tacjan	2
+Tankred	2
+Teodoryk	2
+Teonas	2
+Tertulian	2
+Tygriusz	2
+Wigbert	2
+Winand	2
+Wyszemir	2
+Zbrosław	2

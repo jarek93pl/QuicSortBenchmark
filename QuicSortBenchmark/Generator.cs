@@ -22,6 +22,10 @@ namespace QuicSortBenchmark
 
 
         }
+        public static void loadPolishFirstName()
+        {
+
+        }
         public static string randomString()
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
