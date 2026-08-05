@@ -12,7 +12,7 @@ foreach (var item in tableSizeArray)
 {
     BenchmarTable<Person>(X => { Array.Sort(X, nameSort); }, item, 5, () => Generator.GetPerson(), "net implemetation, name");
     BenchmarTable<Person>(X => { Array.Sort(X, distanceSort); }, item, 5, () => Generator.GetPerson(), "net implemetation, distanceSort");
-    BenchmarTable<Person>(X => { new SortParallelWithProcesorParameter<Person>(20_000_000, 300, nameSort).Sort(X); }, item, 5, () => Generator.GetPerson(), "multitreting, name");
+    BenchmarTable<Person>(X => { new SortParallelWithProcesorParameter<Person>(20_000_000, 150, nameSort).Sort(X); }, item, 5, () => Generator.GetPerson(), "multitreting, name");
     BenchmarTable<Person>(X => { new SortParallelWithProcesorParameter<Person>(20_000_000, 100, distanceSort).Sort(X); }, item, 5, () => Generator.GetPerson(), "multitreting, distanceSort");
     //BenchmarTable<Person>(X => { SortParallel<Person>.QuickSortParallel(X, 0, X.Length - 1); }, item, 5, () => Generator.GetPerson(), "mutithreting");
 }

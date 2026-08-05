@@ -1,13 +1,26 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static QuicSortBenchmark.StatisticData;
 
 namespace QuicSortBenchmark
 {
     public static class Generator
     {
+        static SortedDictionary<RangeWithString, string> PolishFirstNames;
+        static SortedDictionary<RangeWithString, string> PolishSecondNames;
+        static int numberMax;
+        static Generator()
+        {
+
+            PolishFirstNames = StatisticData.LoadPolishFirstName(out int numberOfFirstName);
+
+            PolishSecondNames = StatisticData.LoadPolishSecondName(out int numberofSecondName);
+            numberMax = Math.Max(numberofSecondName, numberOfFirstName) + 10000;
+        }
         static Random rand = new Random();
         public static Person GetPerson()
         {
@@ -22,9 +35,27 @@ namespace QuicSortBenchmark
 
 
         }
-        public static void loadPolishFirstName()
+        public static string loadPolishFirstName()
         {
-
+            if (PolishFirstNames.TryGetValue(new StatisticData.RangeWithString { center = rand.Next(numberMax) }, out var value))
+            {
+                return value;
+            }
+            else
+            {
+                return randomString();
+            }
+        }
+        public static string loadPolishSecondName()
+        {
+            if (PolishSecondNames.TryGetValue(new StatisticData.RangeWithString { center = rand.Next(numberMax) }, out var value))
+            {
+                return value;
+            }
+            else
+            {
+                return randomString();
+            }
         }
         public static string randomString()
         {

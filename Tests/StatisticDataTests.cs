@@ -53,9 +53,9 @@ namespace QuicSortBenchmark.Tests
             }
 
             {
-                if (dictionary.TryGetValue(new StatisticData.RangeWithString { center = 36_000_000 }, out var value))
+                if (dictionary.TryGetValue(new StatisticData.RangeWithString { center = 20_000_000 }, out var value))
                 {
-                    Assert.AreEqual(value, "Henryka");
+                    Assert.AreEqual(value, "SALADKOU");
                 }
             }
         }
