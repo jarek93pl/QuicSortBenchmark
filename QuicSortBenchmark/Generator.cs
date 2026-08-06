@@ -28,8 +28,8 @@ namespace QuicSortBenchmark
             person.DataBright = DateTime.Now.AddDays(-rand.Next(0, 365 * 100));
             person.region = (short)rand.Next(1, 100);
             person.homeAddres = new addres(randomString(), randomString(), randomString());
-            person.personalCode = randomString();
-            person.SecondName = randomString();
+            person.personalCode = loadPolishFirstName();
+            person.SecondName = loadPolishSecondName();
             person.position = new System.Numerics.Vector2(rand.NextSingle() * 100, rand.NextSingle() * 100);
             return person;
 
