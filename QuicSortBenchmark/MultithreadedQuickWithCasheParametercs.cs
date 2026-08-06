@@ -27,7 +27,6 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
     BlockingCollection<startAndEnd> blockingColection = new BlockingCollection<startAndEnd>();
     Task[] tasks;
     Task second;
-    bool started = false;
     public void Sort(T[] arr)
     {
         for (int i = 0; i < tasks.Length; i++)
@@ -60,10 +59,6 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
         DepthLimitedQuickSort1(arr, left, right, 32);
         second?.Wait();
         blockingColection.CompleteAdding();
-        if (!started)
-        {
-            return;
-        }
         Task.WaitAll(tasks);
 
         foreach (var range in blockingColection.GetConsumingEnumerable())
