@@ -27,7 +27,9 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
     private const int MainPARALLEL_THRESHOLD = 50_000;
     BlockingCollection<startAndEnd> blockingColection = new BlockingCollection<startAndEnd>();
     Task[] tasks;
-    Task second;
+    List<Task> allWidleTask = new List<Task>();
+    long taskDone = 0;
+    long taskStarted = 0;
 #if DEBUG
 
     bool notUsed = true;
@@ -55,16 +57,15 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
         }
         CreateTask(arr);
         PARALLEL_THRESHOLD = Math.Min(PARALLEL_THRESHOLD, arr.Length / numberOfProcessors);
-        DepthLimitedQuickSort1(arr, left, right, 16);
-        second?.Wait();
+        DepthLimitedQuickSort1(arr, left, right);
+        while (Interlocked.Read(ref taskDone) < numberOfProcessors)
+        {
+            Thread.Sleep(10);
+        }
         blockingColection.CompleteAdding();
         Task.WaitAll(tasks);
 
-        foreach (var range in blockingColection.GetConsumingEnumerable())
-        {
-            Span<T> span = arr.AsSpan(range.start, range.end - range.start + 1);
-            span.Sort();
-        }
+
     }
 
     private void CreateTask(T[] arr)
@@ -91,9 +92,14 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
             }));
         }
     }
-
-    void RunTask()
+    bool hasBeenStarted = false;
+    void FirstRunTask()
     {
+        if (hasBeenStarted)
+        {
+            return;
+        }
+        hasBeenStarted = true;
         foreach (var task in tasks)
         {
             task.Start();
@@ -104,7 +110,7 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
         blockingColection.Add(new startAndEnd { start = left, end = right });
     }
 
-    internal void DepthLimitedQuickSort1(T[] keys, int left, int right, int depthLimit, bool useBlockingColection = true)
+    internal void DepthLimitedQuickSort1(T[] keys, int left, int right)
     {
         int sizeToCompute = right - left;
         do
@@ -112,12 +118,6 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
 
             int i = left;
             int j = right;
-
-            if (depthLimit == 0)
-            {
-                Heapsort(keys, left, right);
-                return;
-            }
             // pre-sort the low, middle (pivot), and high values in place.
             // this improves performance in the face of already sorted data, or 
             // data that is made up of multiple sorted runs appended together.
@@ -146,28 +146,67 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
 
             if (j - left <= right - i)
             {
-                if (left < j)
+                if (CheckCreateNewTaskL1())
                 {
-                    second = Task.Run(() => DepthLimitedQuickSort(keys, left, j, depthLimit, useBlockingColection));
-                    RunTask();
-                    DepthLimitedQuickSort(keys, i, right, depthLimit, useBlockingColection);
-                    return;
+                    if (left < j)
+                    {
+                        RunTaskL1(keys, left, j);
+                    }
+                    RunTaskL1(keys, i, right);
                 }
+                else
+                {
+                    DepthLimitedQuickSort(keys, i, right, 16);
+                    DepthLimitedQuickSort(keys, left, j, 16);
+                }
+                return;
                 left = i;
             }
             else
             {
-                if (i < right)
+                if (CheckCreateNewTaskL1())
                 {
-                    second = Task.Run(() => DepthLimitedQuickSort(keys, i, right, depthLimit, useBlockingColection));
-                    RunTask();
-                    DepthLimitedQuickSort(keys, left, j, depthLimit, useBlockingColection);
-                    return;
+                    if (i < right)
+                    {
+                        RunTaskL1(keys, i, right);
+                    }
+                    RunTaskL1(keys, left, j);
                 }
+                else
+                {
+                    DepthLimitedQuickSort(keys, i, right, 16);
+                    DepthLimitedQuickSort(keys, left, j, 16);
+                }
+                return;
                 right = j;
             }
         } while (left < right);
+
     }
+
+    bool CheckCreateNewTaskL1()
+    {
+        return Interlocked.Read(ref taskStarted) < numberOfProcessors;
+    }
+    private void RunTaskL1(T[] keys, int left, int right)
+    {
+        if (CheckCreateNewTaskL1())
+        {
+            Interlocked.Increment(ref taskStarted);
+            Task.Run(() =>
+            {
+                DepthLimitedQuickSort1(keys, left, right);
+                Interlocked.Increment(ref taskDone);
+            });
+
+            FirstRunTask();
+        }
+        else
+        {
+            DepthLimitedQuickSort(keys, left, right, 16);
+        }
+    }
+
     internal void DepthLimitedQuickSort(T[] keys, int left, int right, int depthLimit, bool useBlockingColection = true)
     {
         int sizeToCompute = right - left;

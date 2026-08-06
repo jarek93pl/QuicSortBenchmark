@@ -1,4 +1,5 @@
-﻿using QuicSortBenchmark;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using QuicSortBenchmark;
 using QuicSortBenchmark.Comparer;
 using System.Diagnostics;
 using System.Numerics;
