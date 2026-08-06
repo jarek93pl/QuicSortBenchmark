@@ -10,7 +10,7 @@ public class SortForPage<T>
 {
     public static Span<T> Sort(T[] arr, IComparer<T> comparer, int start, int size)
     {
-        DepthLimitedQuickSort(arr, 0, arr.Length-1, 32, start, start + size, comparer);
+        DepthLimitedQuickSort(arr, 0, arr.Length - 1, 32, start - 1, start + size + 1, comparer);
         return arr.AsSpan(start, size);
     }
 
