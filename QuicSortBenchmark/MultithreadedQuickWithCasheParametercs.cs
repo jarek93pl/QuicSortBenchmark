@@ -2,6 +2,7 @@
 //Csharpusing System;
 using System;
 using System.Collections.Concurrent;
+using System.Diagnostics;
 using System.Diagnostics.Contracts;
 using System.Threading.Tasks;
 
@@ -21,14 +22,31 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
         tasks = new Task[numberOfProcessors - 2];
     }
     int numberOfProcessors;
-    private readonly int PARALLEL_THRESHOLD;
+    private int PARALLEL_THRESHOLD;
     private const int minSizeForParral = 20;
     private const int MainPARALLEL_THRESHOLD = 50_000;
     BlockingCollection<startAndEnd> blockingColection = new BlockingCollection<startAndEnd>();
     Task[] tasks;
     Task second;
+#if DEBUG
+
+    bool notUsed = true;
+#endif
+    [Conditional("DEBUG")]
+    public void CheckUsingSecondTime()
+    {
+#if DEBUG        
+        //Contract.Assert(notUsed);
+        if (!notUsed)
+        {
+            throw new ObjectDisposedException("this object can be used only one time");
+        }
+        notUsed = false;
+#endif
+    }
     public void Sort(T[] arr)
     {
+        CheckUsingSecondTime();
         for (int i = 0; i < tasks.Length; i++)
         {
             tasks[i] = (Task.Run(() =>
@@ -56,6 +74,7 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
             Array.Sort(arr);
             return;
         }
+        PARALLEL_THRESHOLD = Math.Min(PARALLEL_THRESHOLD, arr.Length / numberOfProcessors);
         DepthLimitedQuickSort1(arr, left, right, 32);
         second?.Wait();
         blockingColection.CompleteAdding();
@@ -143,7 +162,15 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
     internal void DepthLimitedQuickSort(T[] keys, int left, int right, int depthLimit, bool useBlockingColection = true)
     {
         int sizeToCompute = right - left;
-        if (useBlockingColection && right - left < PARALLEL_THRESHOLD && sizeToCompute > minSizeForParral)
+        if (sizeToCompute < minSizeForParral)
+        {
+            if (sizeToCompute > 0)
+            {
+                DepthLimitedQuickSortClean(keys, left, right, depthLimit);
+            }
+            return;
+        }
+        if (useBlockingColection && right - left < PARALLEL_THRESHOLD)
         {
             InvokeBlockingColection(left, right);
             return;

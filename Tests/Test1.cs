@@ -131,5 +131,39 @@ namespace Tests
             Console.WriteLine($"time create Array.Sort: {timeCreate} ms");
 
         }
+        [TestMethod]
+        public void SortTestNameUsingSecondTime()
+        {
+            var tab = Generator.GenerateRandomPersons(2_000_000);
+            var tab2 = (Person[])tab.Clone();
+
+            Stopwatch stopwatch = Stopwatch.StartNew();
+            Array.Sort(tab2, new NameComparer());
+            Console.WriteLine($"Time taken to sort {tab.Length} Person objects using Array.Sort: {stopwatch.ElapsedMilliseconds} ms");
+            stopwatch = Stopwatch.StartNew();
+            SortParallelWithProcesorParameter<Person> sortParallel = new SortParallelWithProcesorParameter<Person>(20_000_000, 800, new NameComparer());
+            sortParallel.Sort(tab);
+            Console.WriteLine($"Time taken to sort {tab.Length} Person objects: {stopwatch.ElapsedMilliseconds} ms");
+            for (int i = 0; i < tab.Length; i++)
+            {
+                Assert.AreEqual(tab[i].CompareTo(tab2[i]), 0);
+            }
+
+#if DEBUG
+            bool exceptionWasThrown = false;
+            try
+            {
+                sortParallel.Sort(tab);
+            }
+            catch (ObjectDisposedException obj)
+            {
+                exceptionWasThrown = true;
+            }
+            Assert.IsTrue(exceptionWasThrown);
+
+#else
+            Assert.Inconclusive();
+#endif
+        }
     }
 }
