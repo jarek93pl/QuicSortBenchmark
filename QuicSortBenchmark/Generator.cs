@@ -24,11 +24,11 @@ namespace QuicSortBenchmark
         static Random rand = new Random();
         public static Person GetPerson()
         {
-            Person person = new Person(randomString(), rand.Next(0, 100));
+            Person person = new Person(loadPolishFirstName(), rand.Next(0, 100));
             person.DataBright = DateTime.Now.AddDays(-rand.Next(0, 365 * 100));
             person.region = (short)rand.Next(1, 100);
             person.homeAddres = new addres(randomString(), randomString(), randomString());
-            person.personalCode = loadPolishFirstName();
+            person.personalCode = randomString();
             person.SecondName = loadPolishSecondName();
             person.position = new System.Numerics.Vector2(rand.NextSingle() * 100, rand.NextSingle() * 100);
             return person;
