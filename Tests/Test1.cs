@@ -46,6 +46,38 @@ namespace Tests
             }
         }
         [TestMethod]
+        public void SimpleSortName()
+        {
+            var tab = Generator.GenerateRandomPersons(2_000_000);
+            var tab2 = (Person[])tab.Clone();
+
+            Array.Sort(tab2, new NameComparer());
+            SortParallelWithProcesorParameter<Person> sortParallel = new SortParallelWithProcesorParameter<Person>(20_000_000, 150, new NameComparer());
+            sortParallel.Sort(tab);
+            for (int i = 0; i < tab.Length; i++)
+            {
+                Assert.AreEqual(tab[i].CompareTo(tab2[i]), 0);
+            }
+        }
+        [TestMethod]
+        public void SimplePagingNames()
+        {
+            const int size = 10_000_000;
+            var tab = Generator.GenerateRandomPersons(size);
+            var tab2 = (Person[])tab.Clone();
+
+            var nameComparer = new NameComparer();
+            Array.Sort(tab, nameComparer);
+            var spanNet = tab.AsSpan(1000, 10000);
+
+            var spanPaging = SortForPage<Person>.Sort(tab2, nameComparer, 1000, 10000);
+
+            for (int i = 0; i < spanPaging.Length; i++)
+            {
+                Assert.AreEqual(nameComparer.Compare(spanPaging[i], spanNet[i]), 0);
+            }
+        }
+        [TestMethod]
         public void SortTestDistance()
         {
             var tab = Generator.GenerateRandomPersons(2_000_000);
