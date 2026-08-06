@@ -75,7 +75,7 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
             return;
         }
         PARALLEL_THRESHOLD = Math.Min(PARALLEL_THRESHOLD, arr.Length / numberOfProcessors);
-        DepthLimitedQuickSort1(arr, left, right, 32);
+        DepthLimitedQuickSort1(arr, left, right, 16);
         second?.Wait();
         blockingColection.CompleteAdding();
         Task.WaitAll(tasks);
@@ -170,7 +170,7 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
             }
             return;
         }
-        if (useBlockingColection && right - left < PARALLEL_THRESHOLD)
+        if ((useBlockingColection && right - left < PARALLEL_THRESHOLD) || depthLimit <= 0)
         {
             InvokeBlockingColection(left, right);
             return;
@@ -181,11 +181,6 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
             int i = left;
             int j = right;
 
-            if (depthLimit == 0)
-            {
-                Heapsort(keys, left, right);
-                return;
-            }
             // pre-sort the low, middle (pivot), and high values in place.
             // this improves performance in the face of already sorted data, or 
             // data that is made up of multiple sorted runs appended together.
@@ -215,22 +210,22 @@ public class SortParallelWithProcesorParameter<T> where T : IComparable<T>
             int sizeright = right - i;//j - left <= right - i
             if (sizeleft <= sizeright)
             {
-                if (left < j) DepthLimitedQuickSort(keys, left, j, depthLimit, useBlockingColection);
+                if (left < j) DepthLimitedQuickSort(keys, left, j, depthLimit - 1, useBlockingColection);
                 left = i;
                 if (sizeright < PARALLEL_THRESHOLD)
                 {
-                    DepthLimitedQuickSort(keys, i, right, depthLimit, useBlockingColection);
+                    DepthLimitedQuickSort(keys, i, right, depthLimit - 1, useBlockingColection);
                     return;
                 }
             }
             else
             {
-                if (i < right) DepthLimitedQuickSort(keys, i, right, depthLimit, useBlockingColection);
+                if (i < right) DepthLimitedQuickSort(keys, i, right, depthLimit - 1, useBlockingColection);
                 right = j;
 
                 if (sizeleft < PARALLEL_THRESHOLD)
                 {
-                    DepthLimitedQuickSort(keys, left, j, depthLimit, useBlockingColection);
+                    DepthLimitedQuickSort(keys, left, j, depthLimit - 1, useBlockingColection);
                     return;
                 }
 
