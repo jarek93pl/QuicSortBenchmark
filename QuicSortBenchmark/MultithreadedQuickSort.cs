@@ -1,73 +1,43 @@
-﻿/* error 
-//Csharpusing System;
-using System.Threading.Tasks;
-
-static class SortParallel<T> where T : IComparable<T>
+﻿public class QuicksortSimle
 {
-    // Threshold to decide when to switch to sequential sort
-    private const int PARALLEL_THRESHOLD = 1000;
 
-    public static void QuickSortParallel(T[] arr, int left, int right)
+    public static void Sort(int[] arr)
     {
-        if (left >= right) return;
+        quicksort(arr, 0, arr.Length - 1);
+    }
 
-        int pivotIndex = Partition(arr, left, right);
+    private static void quicksort(int[] arr, int low, int high)
+    {
+        if (low < high)
+        {
+            int p = Partition(arr, low, high);
 
-        // If the partition size is large enough, sort in parallel
-        if ((right - left) > PARALLEL_THRESHOLD)
-        {
-            Parallel.Invoke(
-                () => QuickSortParallel(arr, left, pivotIndex - 1),
-                () => QuickSortParallel(arr, pivotIndex + 1, right)
-            );
-        }
-        else
-        {
-            // Sort sequentially for small partitions
-            QuickSortParallel(arr, left, pivotIndex - 1);
-            QuickSortParallel(arr, pivotIndex + 1, right);
+            quicksort(arr, low, p - 1);
+            quicksort(arr, p + 1, high);
         }
     }
 
-    /// <summary>
-    /// Partition method for QuickSort
-    /// </summary>
-    static int Partition(T[] arr, int left, int right)
+    private static int Partition(int[] arr, int low, int high)
     {
-        T pivot = arr[right];
-        int i = left - 1;
-
-        for (int j = left; j < right; j++)
+        int pivot = arr[high];
+        int i = low;
+        for (int j = low; j < high; j++)
         {
-            if (arr[j].CompareTo(pivot) >= 0)
+            if (arr[j] < pivot)
             {
-                i++;
                 Swap(arr, i, j);
+                i++;
             }
         }
-        Swap(arr, i + 1, right);
-        return i + 1;
+        Swap(arr, i, high);
+        return i;
     }
 
-    /// <summary>
-    /// Swap two elements in the array
-    /// </summary>
-    static void Swap(T[] arr, int i, int j)
+    private static void Swap(int[] arr, int a, int b)
     {
-        if (i != j)
-        {
-            T temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-        }
-    }
+        int tmp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = tmp;
 
-    /// <summary>
-    /// Utility method to print the array
-    /// </summary>
-    static void PrintArray(int[] arr)
-    {
-        Console.WriteLine(string.Join(", ", arr));
     }
 }
-*/
